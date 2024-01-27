@@ -1,0 +1,21 @@
+@import "../variables.css";
+
+.button {
+  font-family: Inter, sans-serif;
+  @apply font-bold border-none rounded-xl px-l py-m;
+}
+.button:hover {
+  @apply hover:cursor-pointer;
+}
+.button--primary {
+  @apply bg-primary text-white;
+}
+.button--secondary {
+  @apply bg-secondary text-black;
+}
+.button--small {
+  @apply text-xs px-s py-s;
+}
+.button--large {
+  @apply text-lg px-xl py-l;
+}
