@@ -19,6 +19,7 @@ export const PrimaryVariant: Story = {
     children: "Button",
     variant: "primary",
     size: "lg",
+    disabled: false,
   },
 };
 
@@ -26,19 +27,25 @@ export const SecondaryVariant: Story = {
   args: {
     children: "Button",
     variant: "secondary",
+    size: "lg",
+    disabled: false,
   },
 };
 
 export const LgSize: Story = {
   args: {
-    size: "lg",
     children: "Button",
+    variant: "primary",
+    size: "lg",
+    disabled: false,
   },
 };
 
 export const SmSize: Story = {
   args: {
-    size: "sm",
     children: "Button",
+    variant: "primary",
+    size: "sm",
+    disabled: false,
   },
 };

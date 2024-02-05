@@ -11,6 +11,10 @@ interface ButtonProps {
    */
   size?: "lg" | "sm";
   /**
+   * Button is disabled
+   */
+  disabled?: boolean;
+  /**
    * Button content
    */
   children: React.ReactNode;
@@ -26,6 +30,7 @@ interface ButtonProps {
 export const Button = ({
   variant = "primary",
   size = "lg",
+  disabled = false,
   children,
   ...props
 }: ButtonProps) => {
@@ -33,6 +38,8 @@ export const Button = ({
     <button
       type="button"
       className={["button", `button--${variant}`, `button--${size}`].join(" ")}
+      disabled={disabled}
+      aria-disabled={disabled}
       {...props}
     >
       {children}
