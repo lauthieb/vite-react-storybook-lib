@@ -1,21 +1,45 @@
 @import "../variables.css";
 
+/*
+  Button
+*/
 .button {
   font-family: Inter, sans-serif;
-  @apply font-bold border-none rounded-xl px-l py-m;
+  @apply border-none rounded-sm;
 }
 .button:hover {
   @apply hover:cursor-pointer;
 }
+
+/*
+  Variant
+*/
 .button--primary {
-  @apply bg-primary text-white;
+  @apply bg-surface-primary-default text-content-primary-default;
 }
+.button--primary:hover {
+  @apply bg-surface-primary-hover text-content-primary-hover;
+}
+.button--primary:disabled {
+  @apply bg-surface-primary-disabled text-content-primary-disabled;
+}
+
 .button--secondary {
-  @apply bg-secondary text-black;
+  @apply bg-surface-secondary-default text-content-secondary-default;
 }
-.button--small {
-  @apply text-xs px-s py-s;
+.button--secondary:hover {
+  @apply bg-surface-secondary-hover text-content-secondary-hover;
 }
-.button--large {
-  @apply text-lg px-xl py-l;
+.button--secondary:disabled {
+  @apply bg-surface-secondary-disabled text-content-secondary-disabled;
+}
+
+/*
+  Size
+*/
+.button--sm {
+  @apply text-sm px-4 py-3;
+}
+.button--lg {
+  @apply text-lg px-5 py-4;
 }

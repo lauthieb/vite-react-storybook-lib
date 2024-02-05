@@ -9,7 +9,7 @@ interface ButtonProps {
   /**
    * Button size
    */
-  size?: "small" | "medium" | "large";
+  size?: "lg" | "sm";
   /**
    * Button content
    */
@@ -25,7 +25,7 @@ interface ButtonProps {
  */
 export const Button = ({
   variant = "primary",
-  size = "medium",
+  size = "lg",
   children,
   ...props
 }: ButtonProps) => {
