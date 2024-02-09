@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const PrimaryVariant: Story = {
   args: {
-    children: "Button",
+    children: "Bouton",
     variant: "primary",
     size: "lg",
     disabled: false,
@@ -25,7 +25,7 @@ export const PrimaryVariant: Story = {
 
 export const SecondaryVariant: Story = {
   args: {
-    children: "Button",
+    children: "Bouton",
     variant: "secondary",
     size: "lg",
     disabled: false,
@@ -34,7 +34,7 @@ export const SecondaryVariant: Story = {
 
 export const LgSize: Story = {
   args: {
-    children: "Button",
+    children: "Bouton",
     variant: "primary",
     size: "lg",
     disabled: false,
@@ -43,7 +43,7 @@ export const LgSize: Story = {
 
 export const SmSize: Story = {
   args: {
-    children: "Button",
+    children: "Bouton",
     variant: "primary",
     size: "sm",
     disabled: false,
