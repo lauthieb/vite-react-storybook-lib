@@ -26,6 +26,7 @@
 
 .button--secondary {
   @apply bg-surface-secondary-default text-content-secondary-default;
+  background-color: red;
 }
 .button--secondary:hover {
   @apply bg-surface-secondary-hover text-content-secondary-hover;
