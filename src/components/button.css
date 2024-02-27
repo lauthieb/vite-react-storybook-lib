@@ -16,6 +16,7 @@
 */
 .button--primary {
   @apply bg-surface-primary-default text-content-primary-default;
+  background-color: tomato;
 }
 .button--primary:hover {
   @apply bg-surface-primary-hover text-content-primary-hover;
