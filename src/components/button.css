@@ -5,7 +5,7 @@
 */
 .button {
   font-family: Inter, sans-serif;
-  @apply border-none rounded-sm;
+  @apply border-none rounded-none;
 }
 .button:hover {
   @apply hover:cursor-pointer;
