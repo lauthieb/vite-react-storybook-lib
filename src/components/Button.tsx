@@ -1,5 +1,7 @@
 import React from "react";
 import "./button.css";
+import SvgShoppingBag from "../icons/ShoppingBag";
+import SvgArrowRight from "../icons/ArrowRight";
 
 interface ButtonProps {
   /**
@@ -14,6 +16,14 @@ interface ButtonProps {
    * Button is disabled
    */
   disabled?: boolean;
+  /**
+   * Button has a start icon
+   */
+  startIcon?: boolean;
+  /**
+   * Button has an end icon
+   */
+  endIcon?: boolean;
   /**
    * Button content
    */
@@ -31,6 +41,8 @@ export const Button = ({
   variant = "primary",
   size = "lg",
   disabled = false,
+  startIcon = false,
+  endIcon = false,
   children,
   ...props
 }: ButtonProps) => {
@@ -42,7 +54,9 @@ export const Button = ({
       aria-disabled={disabled}
       {...props}
     >
+      {startIcon && <SvgShoppingBag className={`icon--${size}`} />}
       {children}
+      {endIcon && <SvgArrowRight className={`icon--${size}`} />}
     </button>
   );
 };

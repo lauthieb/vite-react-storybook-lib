@@ -1,0 +1,13 @@
+.icon {
+  
+}
+
+.icon--sm {
+  width: var(--icons-sm);
+  height: var(--icons-sm);
+}
+
+.icon--lg {
+  width: var(--icons-lg);
+  height: var(--icons-lg);
+}

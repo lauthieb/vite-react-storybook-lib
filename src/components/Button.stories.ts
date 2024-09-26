@@ -20,6 +20,8 @@ export const PrimaryVariant: Story = {
     variant: "primary",
     size: "lg",
     disabled: false,
+    startIcon: false,
+    endIcon: false
   },
 };
 
@@ -29,6 +31,8 @@ export const SecondaryVariant: Story = {
     variant: "secondary",
     size: "lg",
     disabled: false,
+    startIcon: false,
+    endIcon: false
   },
 };
 
@@ -38,6 +42,8 @@ export const LgSize: Story = {
     variant: "primary",
     size: "lg",
     disabled: false,
+    startIcon: false,
+    endIcon: false
   },
 };
 
@@ -47,5 +53,7 @@ export const SmSize: Story = {
     variant: "primary",
     size: "sm",
     disabled: false,
+    startIcon: false,
+    endIcon: false
   },
 };

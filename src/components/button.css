@@ -4,33 +4,30 @@
   Button
 */
 .button {
-  @apply font-sans border-xs border-solid rounded-sm inline-flex justify-center items-center;
-}
-.button:hover {
-  @apply hover:cursor-pointer;
+  @apply font-sans border-xs border-solid rounded-sm inline-flex justify-center items-center hover:cursor-pointer disabled:cursor-not-allowed;
 }
 
 /*
   Variant
 */
 .button--primary {
-  @apply bg-surface-primary-default border-surface-primary-default text-content-primary-default;
+  @apply bg-surface-primary-default border-border-primary-default text-content-primary-default;
 }
 .button--primary:hover {
-  @apply bg-surface-primary-hover border-surface-primary-hover text-content-primary-hover;
+  @apply bg-surface-primary-hover border-border-primary-hover text-content-primary-hover;
 }
 .button--primary:disabled {
-  @apply bg-surface-primary-disabled border-surface-primary-disabled text-content-primary-disabled;
+  @apply bg-surface-primary-disabled border-border-primary-disabled text-content-primary-disabled;
 }
 
 .button--secondary {
-  @apply bg-surface-secondary-default border-surface-secondary-default text-content-secondary-default;
+  @apply bg-surface-secondary-default border-border-secondary-default text-content-secondary-default;
 }
 .button--secondary:hover {
-  @apply bg-surface-secondary-hover border-surface-secondary-hover text-content-secondary-hover;
+  @apply bg-surface-secondary-hover border-border-secondary-hover text-content-secondary-hover;
 }
 .button--secondary:disabled {
-  @apply bg-surface-secondary-disabled border-surface-secondary-disabled text-content-secondary-disabled;
+  @apply bg-surface-secondary-disabled border-border-secondary-disabled text-content-secondary-disabled;
 }
 
 /*

@@ -52,7 +52,7 @@ export default {
             disabled: colors.blue[100],
           },
           secondary: {
-            default: colors.zinc[200],
+            default: colors.zinc[50],
             hover: colors.zinc[900],
             disabled: colors.zinc[200],
           },
@@ -65,7 +65,7 @@ export default {
           },
           secondary: {
             default: colors.zinc[900],
-            hover: colors.zinc[50],
+            hover: colors.zinc[100],
             disabled: colors.zinc[400],
           },
         },
