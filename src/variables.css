@@ -1,4 +1,7 @@
+@import "@fontsource/inter";
+
 :root {
+  /* Sizes */
   --radius-none: 0px;
   --radius-xs: 2px;
   --radius-sm: 4px;
@@ -9,16 +12,39 @@
   --radius-3xl: 96px;
   --radius-full: 9999px;
 
-  --spacing-1: 2px;
-  --spacing-2: 4px;
-  --spacing-3: 8px;
-  --spacing-4: 12px;
-  --spacing-5: 16px;
-  --spacing-6: 24px;
-  --spacing-7: 32px;
-  --spacing-8: 40px;
-  --spacing-9: 48px;
-  --spacing-10: 64px;
-  --spacing-11: 80px;
-  --spacing-12: 96px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+
+  --icons-sm: 16px;
+  --icons-md: 24px;
+  --icons-lg: 32px;
+
+  --border-width-xs: 1px;
+  --border-width-sm: 2px;
+  --border-width-md: 4px;
+  --border-width-lg: 8px;
+
+  /* Typography */
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+
+  --font-family-sans: "Inter";
+
+  --line-height-sm: 16px;
+  --line-height-md: 20px;
+  --line-height-lg: 24px;
+
+  /* Typography primitives */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 }

@@ -4,6 +4,7 @@ import colors from "tailwindcss/colors";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    /* Sizes */
     borderRadius: {
       none: "var(--radius-none)",
       xs: "var(--radius-xs)",
@@ -16,20 +17,33 @@ export default {
       full: "var(--radius-full)",
     },
     spacing: {
-      1: "var(--spacing-1)",
-      2: "var(--spacing-2)",
-      3: "var(--spacing-3)",
-      4: "var(--spacing-4)",
-      5: "var(--spacing-5)",
-      6: "var(--spacing-6)",
-      7: "var(--spacing-7)",
-      8: "var(--spacing-8)",
-      9: "var(--spacing-9)",
-      10: "var(--spacing-10)",
-      11: "var(--spacing-11)",
-      12: "var(--spacing-12)",
+      xs: "var(--spacing-xs)",
+      sm: "var(--spacing-sm)",
+      md: "var(--spacing-md)",
+      lg: "var(--spacing-lg)"
+    },
+    borderWidth: {
+      xs: "var(--border-width-xs)",
+      sm: "var(--border-width-sm)",
+      md: "var(--border-width-md)",
+      lg: "var(--border-width-lg)"
+    },
+    /* Typography */
+    fontSize: {
+      sm: "var(--font-size-sm)",
+      md: "var(--font-size-md)",
+      lg: "var(--font-size-lg)"
+    },
+    fontFamily: {
+      sans: "var(--font-family-sans)"
+    },
+    lineHeight: {
+      sm: "var(--line-height-sm)",
+      md: "var(--line-height-md)",
+      lg: "var(--line-height-lg)"
     },
     extend: {
+      /* Colors */
       colors: {
         surface: {
           primary: {
@@ -55,6 +69,30 @@ export default {
             disabled: colors.zinc[400],
           },
         },
+        border: {
+          primary: {
+            default: colors.blue[500],
+            hover: colors.blue[400],
+            disabled: colors.blue[300],
+          },
+          secondary: {
+            default: colors.zinc[200],
+            hover: colors.zinc[900],
+            disabled: colors.zinc[300],
+          },
+        },
+        icons: {
+          "on-primary": {
+            default: colors.blue[50],
+            hover: colors.blue[100],
+            disabled: colors.blue[300],
+          },
+          "on-secondary": {
+            default: colors.zinc[900],
+            hover: colors.zinc[50],
+            disabled: colors.zinc[400],
+          },
+        }
       },
     },
   },
