@@ -14,8 +14,14 @@ figma.connect(
         lg: "lg",
         sm: "sm",
       }),
-      startIcon: figma.boolean("Start Icon"),
-      endIcon: figma.boolean("End Icon"),
+      startIcon: figma.boolean("Has Start Icon", {
+        true: figma.instance("↪ Start Icon"),
+        false: undefined,
+      }),
+      endIcon: figma.boolean("Has End Icon", {
+        true: figma.instance("↪ End Icon"),
+        false: undefined,
+      }),
       children: figma.string("Text value"),
     },
     example: ({

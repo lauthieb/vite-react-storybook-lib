@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "./Button";
+import { SvgShoppingBag } from "../icons/ShoppingBag";
 
 const meta = {
   title: "Example/Button",
@@ -19,9 +20,7 @@ export const PrimaryVariant: Story = {
     children: "Button",
     variant: "primary",
     size: "lg",
-    disabled: false,
-    startIcon: false,
-    endIcon: false
+    disabled: false
   },
 };
 
@@ -30,9 +29,7 @@ export const SecondaryVariant: Story = {
     children: "Button",
     variant: "secondary",
     size: "lg",
-    disabled: false,
-    startIcon: false,
-    endIcon: false
+    disabled: false
   },
 };
 
@@ -41,9 +38,7 @@ export const LgSize: Story = {
     children: "Button",
     variant: "primary",
     size: "lg",
-    disabled: false,
-    startIcon: false,
-    endIcon: false
+    disabled: false
   },
 };
 
@@ -52,8 +47,6 @@ export const SmSize: Story = {
     children: "Button",
     variant: "primary",
     size: "sm",
-    disabled: false,
-    startIcon: false,
-    endIcon: false
+    disabled: false
   },
 };

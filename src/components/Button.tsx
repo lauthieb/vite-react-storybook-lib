@@ -17,13 +17,13 @@ interface ButtonProps {
    */
   disabled?: boolean;
   /**
-   * Button has a start icon
+   * Button start icon
    */
-  startIcon?: boolean;
+  startIcon?: React.ReactNode;
   /**
-   * Button has an end icon
+   * Button end icon
    */
-  endIcon?: boolean;
+  endIcon?: React.ReactNode;
   /**
    * Button content
    */
@@ -41,8 +41,8 @@ export const Button = ({
   variant = "primary",
   size = "lg",
   disabled = false,
-  startIcon = false,
-  endIcon = false,
+  startIcon = <SvgShoppingBag />,
+  endIcon = <SvgArrowRight />,
   children,
   ...props
 }: ButtonProps) => {

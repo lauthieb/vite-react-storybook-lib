@@ -6,6 +6,7 @@ const SvgCalendar = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGEleme
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
+    viewBox="0 0 24 24"
     {...props}
   >
     <path
