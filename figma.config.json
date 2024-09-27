@@ -2,6 +2,10 @@
   "codeConnect": {
     "parser": "react",
     "include": ["./src/**"],
-    "exclude": ["**/node_modules/**", "**/dist/**", "**/storybook-static/**"]
+    "exclude": ["**/node_modules/**", "**/dist/**", "**/storybook-static/**"],
+    "documentUrlSubstitutions": {
+      "<FIGMA_ICONS_BASE>": "https://www.figma.com/design/VI4GluAmGjPqFPxgkWTs5c",
+      "<FIGMA_COMPONENTS_BUTTON>": "https://www.figma.com/design/VI4GluAmGjPqFPxgkWTs5c?node-id=1-166"
+    }
   }
 }

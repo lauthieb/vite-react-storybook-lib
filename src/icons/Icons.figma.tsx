@@ -1,0 +1,26 @@
+import figma from "@figma/code-connect";
+import SvgAlarm from "./Alarm";
+import SvgArrowRight from "./ArrowRight";
+import SvgBag from "./Bag";
+import SvgCalendar from "./Calendar";
+import SvgClock from "./Clock";
+import SvgFilter from "./Filter";
+import SvgHome from "./Home";
+import SvgPalette from "./Palette";
+import SvgPulse from "./Pulse";
+import SvgShoppingBag from "./ShoppingBag";
+import SvgShoppingBagBasket from "./ShoppingBagBasket";
+import SvgTimer from "./Timer";
+
+figma.connect(SvgAlarm, "<FIGMA_ICONS_BASE>?node-id=1-226", { example: () => <SvgAlarm />, imports: ["import { SvgAlarm } from '@my-lib/react'"] });
+figma.connect(SvgArrowRight, "<FIGMA_ICONS_BASE>?node-id=1-228", { example: () => <SvgArrowRight />, imports: ["import { SvgArrowRight } from '@my-lib/react'"] });
+figma.connect(SvgBag, "<FIGMA_ICONS_BASE>?node-id=1-210", { example: () => <SvgBag />, imports: ["import { SvgBag } from '@my-lib/react'"] });
+figma.connect(SvgCalendar, "<FIGMA_ICONS_BASE>?node-id=1-220", { example: () => <SvgCalendar />, imports: ["import { SvgCalendar } from '@my-lib/react'"] });
+figma.connect(SvgClock, "<FIGMA_ICONS_BASE>?node-id=1-224", { example: () => <SvgClock />, imports: ["import { SvgClock } from '@my-lib/react'"] });
+figma.connect(SvgFilter, "<FIGMA_ICONS_BASE>?node-id=1-222", { example: () => <SvgFilter />, imports: ["import { SvgFilter } from '@my-lib/react'"] });
+figma.connect(SvgHome, "<FIGMA_ICONS_BASE>?node-id=1-208", { example: () => <SvgHome />, imports: ["import { SvgHome } from '@my-lib/react'"] });
+figma.connect(SvgPalette, "<FIGMA_ICONS_BASE>?node-id=1-212", { example: () => <SvgPalette />, imports: ["import { SvgPalette } from '@my-lib/react'"] });
+figma.connect(SvgPulse, "<FIGMA_ICONS_BASE>?node-id=1-216", { example: () => <SvgPulse />, imports: ["import { SvgPulse } from '@my-lib/react'"] });
+figma.connect(SvgShoppingBag, "<FIGMA_ICONS_BASE>?node-id=1-218", { example: () => <SvgShoppingBag />, imports: ["import { SvgShoppingBag } from '@my-lib/react'"] });
+figma.connect(SvgShoppingBagBasket, "<FIGMA_ICONS_BASE>?node-id=1-214", { example: () => <SvgShoppingBagBasket />, imports: ["import { SvgShoppingBagBasket } from '@my-lib/react'"] });
+figma.connect(SvgTimer, "<FIGMA_ICONS_BASE>?node-id=1-230", { example: () => <SvgTimer />, imports: ["import { SvgTimer } from '@my-lib/react'"] });

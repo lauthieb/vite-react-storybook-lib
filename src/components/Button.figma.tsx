@@ -3,7 +3,7 @@ import { Button } from "./Button"
 
 figma.connect(
   Button,
-  "https://www.figma.com/design/VI4GluAmGjPqFPxgkWTs5c/%5BEXT---Private%5D-Ep-2---Code-Connect-(Figma-hosted)?node-id=1-166",
+  "<FIGMA_COMPONENTS_BUTTON>",
   {
     props: {
       variant: figma.enum("Type", {
