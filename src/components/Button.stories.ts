@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "./Button";
-import { SvgShoppingBag } from "../icons/ShoppingBag";
 
 const meta = {
   title: "Example/Button",
