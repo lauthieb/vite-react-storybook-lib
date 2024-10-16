@@ -46,6 +46,14 @@ export const Button = ({
   children,
   ...props
 }: ButtonProps) => {
+
+  const renderIcon = (icon: React.ReactNode) => {
+    if (React.isValidElement<{ className?: string }>(icon)) {
+      return React.cloneElement(icon, { className: `icon--${size}` });
+    }
+    return null;
+  };
+
   return (
     <button
       type="button"
@@ -54,9 +62,9 @@ export const Button = ({
       aria-disabled={disabled}
       {...props}
     >
-      {startIcon && <SvgShoppingBag className={`icon--${size}`} />}
+      {renderIcon(startIcon)}
       {children}
-      {endIcon && <SvgArrowRight className={`icon--${size}`} />}
+      {renderIcon(endIcon)}
     </button>
   );
 };
